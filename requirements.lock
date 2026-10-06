@@ -96,5 +96,5 @@ websockets==16.1.1
 xxhash==3.6.0
 
 --find-links ./wheels
-dcfa==0.1.0
-agentic-tabcf-entry==0.1.0
+dcfa==0.1.1
+agentic-tabcf-entry==0.1.1

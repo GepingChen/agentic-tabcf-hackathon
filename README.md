@@ -55,12 +55,19 @@ Y/X/Z rows. Use only authorized inputs and review the transfer consent.
 The entry fixes `api_only` / `v3.5_default`: quota exhaustion stops the analysis.
 It does not buy credits or silently switch models.
 
-The dependency lock installs the original accepted wheel pair under `wheels/`.
+The dependency lock installs the corrected 0.1.1 wheel pair under `wheels/`.
 Readable source is supplied alongside it: the Apache entry under `src/`, and the
 retained MIT parent under `vendor/dcfa/`. Entry configuration files come from the
-accepted wheel. `parent_commit.txt` identifies the historical parent runtime;
-current entry prose does not change that identity. `SOURCE_LAYOUT.md` explains
-the export. No local runtime modifications are needed to start the entry.
+entry wheel. `parent_commit.txt` identifies the historical parent export;
+`SOURCE_LAYOUT.md` describes the local upload-cleanup correction in 0.1.1.
+The original 0.1.0 wheels and saved results are retained. No local runtime
+modifications or ZeroGPU dependencies are needed to start the entry.
+
+Run the credential-free local cleanup regression checks with:
+
+```bash
+.venv/bin/python -m pytest -q tests/test_local_upload_cleanup.py
+```
 
 ## Reproduce the example
 
@@ -95,7 +102,7 @@ people or groups. All results remain `development_only`; there are no claims of
 significance, individual effects, policy benefit or general model superiority.
 
 Root [LICENSE](LICENSE) is Apache-2.0 for the entry and new materials. The
-unchanged DCFA parent and TabCF reference code retain MIT; data and model/service
+DCFA parent, its cleanup correction and TabCF reference code retain MIT; data and model/service
 terms remain separate. Read [NOTICE](NOTICE), `PARENT_MIT_LICENSE`,
 `TABCF_MIT_LICENSE` and the example's `SOURCE.md` / `GPL-2.0.txt`.
 See [LICENSING.md](LICENSING.md) for the component-by-component scope and third-party

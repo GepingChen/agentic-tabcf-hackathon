@@ -3,10 +3,13 @@
 Root src/ and pyproject.toml are the Apache-2.0 thin entry. Runtime files
 and configs were copied unchanged from the accepted entry wheel.
 vendor/dcfa/ contains the installable MIT parent source from parent_source.tar
-at parent_commit.txt; Python source and package assets are unchanged.
+at parent_commit.txt. The 0.1.1 patch moves the shared upload cleanup into
+`dcfa_website_demo/upload_cleanup.py`, updates its local/ZeroGPU callers and
+bumps package metadata. Statistical code, configs and saved results are unchanged.
 Historical documentation links were adapted to this focused export.
-The original accepted wheels and dependency lock remain the default install
-path. To rebuild locally: python -m pip wheel --no-deps ./vendor/dcfa .
+The dependency lock selects the corrected 0.1.1 wheels; original 0.1.0 wheels
+remain available for historical inspection. To rebuild locally:
+python -m pip wheel --no-deps ./vendor/dcfa .
 
 TabCF's original separate source archive is retained in the local v6 ZIP.
 The managed API entry executes the bundled DCFA adapter and does not import

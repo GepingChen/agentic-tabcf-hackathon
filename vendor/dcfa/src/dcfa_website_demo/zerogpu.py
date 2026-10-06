@@ -41,6 +41,7 @@ from dcfa_website_demo.app import (
     format_portfolio_result,
     portfolio_ui_updates,
 )
+from dcfa_website_demo.upload_cleanup import _safe_unlink_upload as _safe_unlink_upload
 
 DEFAULT_ZEROGPU_OUTPUT_ROOT = Path("/tmp/dcfa-zerogpu-runs")
 DEFAULT_GRADIO_TEMP_ROOT = Path("/tmp/gradio")
@@ -248,15 +249,6 @@ def _verified_projection(result: Any, secret: str | None) -> tuple[Any, ...]:
     finally:
         if root is not None and root.is_dir():
             shutil.rmtree(root)
-
-
-def _safe_unlink_upload(path: str | None) -> None:
-    if not path:
-        return
-    candidate = Path(path).resolve()
-    temp_root = Path(os.environ.get("GRADIO_TEMP_DIR", str(DEFAULT_GRADIO_TEMP_ROOT))).resolve()
-    if candidate.is_relative_to(temp_root):
-        candidate.unlink(missing_ok=True)
 
 
 def build_zerogpu_app(*, build_revision: str) -> Any:

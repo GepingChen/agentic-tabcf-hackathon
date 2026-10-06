@@ -10,6 +10,7 @@ import gradio as gr
 
 from dcfa.errors import DCFAError, ErrorCode
 from dcfa_website_demo.dialogue import SESSION_SECONDS, CSVConversation, prepare_turn
+from dcfa_website_demo.upload_cleanup import _safe_unlink_upload
 
 
 def bind_csv_dialogue(
@@ -462,8 +463,6 @@ def bind_csv_dialogue(
 
 
 def cleanup_session(session: CSVConversation) -> None:
-    from dcfa_website_demo.zerogpu import _safe_unlink_upload
-
     if session is None:
         return
     _safe_unlink_upload(session.upload_path)

@@ -7,7 +7,7 @@ Separate components retain the licenses and attribution listed below.
 | Component | Applicable terms | Location |
 |---|---|---|
 | New entry Python code and new submission documentation | Apache-2.0, copyright 2026 Geping Chen | `LICENSE`, `src/agentic_tabcf_entry/__init__.py` |
-| Retained DCFA statistical/runtime source and its original wheel | MIT, copyright 2026 Geping Chen | `vendor/dcfa/LICENSE`, `PARENT_MIT_LICENSE`, parent wheel license/metadata |
+| Retained DCFA statistical/runtime source, upload-cleanup correction and wheels | MIT, copyright 2026 Geping Chen | `vendor/dcfa/LICENSE`, `PARENT_MIT_LICENSE`, parent wheel license/metadata |
 | Runtime JSON prompts/configuration copied from DCFA | Retained parent MIT terms | `src/agentic_tabcf_entry/configs/`, `PARENT_MIT_LICENSE` |
 | Original TabCF method/source attribution | Retained MIT terms; the separate original source tree is not installed by this managed entry | `TABCF_MIT_LICENSE`, `tabcf_commit.txt`, `SOURCE_LAYOUT.md` |
 | Public cigarette data extract and original source documentation | Ecdat declares GPL (>= 2); retain source attribution and accompanying GPL text | `examples/cigarette/SOURCE.md`, `examples/cigarette/GPL-2.0.txt` |
