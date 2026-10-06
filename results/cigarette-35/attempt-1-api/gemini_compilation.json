@@ -1,0 +1,66 @@
+{
+  "actual_intervention_values_sent_to_gemini": 0,
+  "backend_access_mode": "managed_client",
+  "confirmed_roles": {
+    "instrument": {
+      "column": "real_sales_tax",
+      "column_position": 3,
+      "definition": "real_sales_tax"
+    },
+    "outcome": {
+      "column": "log_packs_per_capita",
+      "column_position": 1,
+      "definition": "log_packs_per_capita"
+    },
+    "treatment": {
+      "column": "log_real_price",
+      "column_position": 2,
+      "definition": "log_real_price"
+    }
+  },
+  "data_rows_sent_to_gemini": 0,
+  "data_sent_to_gemini": [
+    "conversation",
+    "csv_column_names",
+    "optional_role_overrides"
+  ],
+  "distribution_report": "### Distributional analysis \u2014 Track T \u00b7 Real data \u00b7 Exploratory estimates\n\nPrices: 100 to 120 CPI-deflated cents per pack. All differences are 120 minus 100.\n\nState-year sales per capita; each observation has equal weight.\n\n**Sales quantiles**\n\nLevels and changes are in packs per person per year. Each row describes a percentile of the estimated sales distribution; the median is the 50th percentile.\n\n| Quantile | Price 100 | Price 120 | Change (120 \u2212 100) |\n|:---|---:|---:|---:|\n| 25% | 105.2 | 87.8 | -17.4 |\n| 50% | 116.1 | 97.9 | -18.2 |\n| 75% | 128.0 | 108.3 | -19.6 |\n\n**Probability above the specified sales threshold**\n\nSales strictly exceeding 120 packs per person per year. Levels are percentages; the change is in percentage points.\n\n| Price 100 (%) | Price 120 (%) | Change (percentage points) |\n|---:|---:|---:|\n| 40.7 | 9.2 | -31.5 |",
+  "distribution_warnings": "<div class=\"distribution-warnings\" style=\"font-size:0.875em;line-height:1.5\"><small style=\"font-size:inherit\"><strong>Warnings and interpretation limits</strong><ul><li>This TabPFN-backed managed/local run is development-only, not a hash-locked Track T result, and is ineligible for release claims.</li><li>The estimated control rank departs from a uniform reference in this development check.</li><li>Point estimates only, without confidence intervals or significance. Quantile changes are distributional, not individual effects. CDFs cover only the evaluated outcome grid; no extrapolation.</li><li>Real-data exploratory state-year aggregates with equal observation weights, repeated states, and omitted income and state/year effects. Within-state dependence and omitted confounding are not addressed. Instrument exclusion and exogeneity remain assumptions.</li><li>One continuous treatment, one continuous outcome, one scalar instrument, and no baseline covariates W.</li><li>Relevance, exclusion, instrument exogeneity, scalar monotonicity, and common support are assumptions; empirical diagnostics do not prove them.</li><li>Managed-service TabPFN is service-version-traceable rather than bitwise reproducible and cannot enter locked Track T evidence.</li><li>These are empirical diagnostics. They do not prove instrument validity or identification.</li><li>The PDF is an approximate density from finite-differencing the displayed CDF grid; it is not separately fitted or smoothed. No tail extrapolation is performed.</li></ul></small></div>",
+  "last_turn_usage": {
+    "input_tokens": 1042,
+    "output_tokens": 314,
+    "thought_tokens": 578,
+    "total_tokens": 1934
+  },
+  "model": "gemini-3.6-flash",
+  "model_request_count": 3,
+  "proposal": {
+    "comparison_x_label": "exact",
+    "decision": "analyze",
+    "distribution": {
+      "outcome_scale": "stored_natural_log",
+      "outcome_units": "packs per person per year",
+      "prices": [
+        100,
+        120
+      ],
+      "scale_quote": "X and Y are already natural logs",
+      "threshold": 120,
+      "treatment_scale": "stored_natural_log",
+      "treatment_units": "CPI-deflated cents per pack"
+    },
+    "instrument": "real_sales_tax",
+    "level_label": "quartiles",
+    "objective": "distribution",
+    "outcome": "log_packs_per_capita",
+    "reason": "Exact price distribution comparison analysis plan.",
+    "treatment": "log_real_price",
+    "treatment_type": "continuous",
+    "x_label": "exact"
+  },
+  "protocol_version": "space_csv_dialogue_v1",
+  "provider": "google_gemini_developer_api",
+  "sdk_version": "2.18.1",
+  "store": false,
+  "user_supplied_numeric_interventions": 2
+}

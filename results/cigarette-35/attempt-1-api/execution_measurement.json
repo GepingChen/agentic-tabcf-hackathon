@@ -1,0 +1,54 @@
+{
+  "analysis_and_report_seconds": 169.39593254198553,
+  "provider_server_seconds": null,
+  "stages": [
+    {
+      "backend_observations": {
+        "api_prediction_calls": "1",
+        "managed_protocol_version": "tabpfn_client_managed_demo_v3",
+        "request_1_billing_model_version": "v3.5",
+        "request_1_columns": "1",
+        "request_1_model_path": "/app/tabpfn_models/tabpfn-v3.5-20260909.safetensors",
+        "request_1_n_estimators": "1",
+        "request_1_output_type": "full",
+        "request_1_rows": "144",
+        "request_1_service_package_version": "9.0.0",
+        "request_1_trace_id": "7b3e586c09d0435b99b41b630f7a4fe1"
+      },
+      "client_wall_seconds": 6.143010707979556,
+      "stage": "stage1"
+    },
+    {
+      "backend_observations": {
+        "api_prediction_calls": "3",
+        "managed_protocol_version": "tabpfn_client_managed_demo_v3",
+        "request_1_billing_model_version": "v3.5",
+        "request_1_columns": "1",
+        "request_1_model_path": "/app/tabpfn_models/tabpfn-v3.5-20260909.safetensors",
+        "request_1_n_estimators": "1",
+        "request_1_output_type": "full",
+        "request_1_rows": "144",
+        "request_1_service_package_version": "9.0.0",
+        "request_1_trace_id": "7b3e586c09d0435b99b41b630f7a4fe1",
+        "request_2_billing_model_version": "v3.5",
+        "request_2_columns": "2",
+        "request_2_model_path": "/app/tabpfn_models/tabpfn-v3.5-20260909.safetensors",
+        "request_2_n_estimators": "1",
+        "request_2_output_type": "mean",
+        "request_2_rows": "36",
+        "request_2_service_package_version": "9.0.0",
+        "request_2_trace_id": "7de8c9e2351243228139b9917e68d36f",
+        "request_3_billing_model_version": "v3.5",
+        "request_3_columns": "2",
+        "request_3_model_path": "/app/tabpfn_models/tabpfn-v3.5-20260909.safetensors",
+        "request_3_n_estimators": "1",
+        "request_3_output_type": "full",
+        "request_3_rows": "36",
+        "request_3_service_package_version": "9.0.0",
+        "request_3_trace_id": "ce6edbe4d5444c08924554360c8a7c34"
+      },
+      "client_wall_seconds": 162.53642966598272,
+      "stage": "stage2"
+    }
+  ]
+}

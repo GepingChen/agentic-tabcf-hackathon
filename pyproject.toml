@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-tabcf-entry"
+version = "0.1.0"
+description = "Agentic TabCF: Distributional Causal Analysis with TabPFN"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = ["dcfa==0.1.0"]
+
+[project.scripts]
+agentic-tabcf = "agentic_tabcf_entry:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agentic_tabcf_entry = ["configs/*.json"]

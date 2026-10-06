@@ -1,0 +1,21 @@
+Agentic TabCF: Distributional Causal Analysis with TabPFN
+Copyright 2026 Geping Chen
+
+This hackathon project's entry code and new submission documentation are
+licensed under the Apache License, Version 2.0. See LICENSE and LICENSING.md.
+
+The retained DCFA dependency is MIT, Copyright 2026 Geping Chen. Its source,
+wheel and copied runtime JSON prompts/configuration retain their original
+terms. See vendor/dcfa/LICENSE and PARENT_MIT_LICENSE.
+
+TabCF predates this entry. Its separately recorded MIT source license and commit
+are retained in TABCF_MIT_LICENSE and tabcf_commit.txt. The separate upstream
+source tree is not installed by the managed API entry.
+
+Cigarette example data and original documentation retain their source terms.
+See examples/cigarette/SOURCE.md and examples/cigarette/GPL-2.0.txt. Root Apache
+licensing does not override the data license.
+
+TabPFN model weights and hosted provider services are not redistributed or
+relicensed here. Saved results retain their original provenance and warnings.
+Publication of this repository is separate from official hackathon submission.

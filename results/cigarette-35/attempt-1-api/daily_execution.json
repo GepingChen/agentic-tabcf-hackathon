@@ -1,0 +1,96 @@
+{
+  "actual_model": "TabPFN v3.5_default",
+  "attempts": [
+    {
+      "api_usage": {
+        "after": {
+          "daily_limit": 5000000,
+          "daily_used": 330000,
+          "monthly_limit": 20000000,
+          "monthly_used": 400000
+        },
+        "before": {
+          "daily_limit": 5000000,
+          "daily_used": 300000,
+          "monthly_limit": 20000000,
+          "monthly_used": 370000
+        }
+      },
+      "backend": "api",
+      "client_wall_seconds": 170.38869379198877,
+      "directory": "attempt-1-api",
+      "error": null,
+      "provider_server_seconds": null,
+      "status": "completed"
+    }
+  ],
+  "backend_manifest": {
+    "cdf_rule": "NumPy parity with TabPFN 9.0.0 BarDistribution.cdf over managed borders and logits; client JSON null logits restore exact zero probability",
+    "dcfa_source_tree_hash": "sha256:45c043ab3c9c388025902bb1b7a1294d42241905c1fdfb326dcc0ea6ec029d21",
+    "estimator_backend": "tabpfn",
+    "evidence_status": "development_only",
+    "execution_profile": "local_development",
+    "model_artifact_hash": "managed_service_checkpoint_not_locally_available",
+    "model_class_distribution": "tabpfn_client.TabPFNRegressor(output_type='full')",
+    "model_class_mean": "tabpfn_client.TabPFNRegressor(output_type='mean')",
+    "package_versions": [
+      [
+        "tabpfn-client",
+        "0.6.1"
+      ]
+    ],
+    "parameters": [
+      [
+        "access_mode",
+        "managed_client"
+      ],
+      [
+        "managed_protocol_version",
+        "tabpfn_client_managed_demo_v3"
+      ],
+      [
+        "client_version",
+        "0.6.1"
+      ],
+      [
+        "expected_service_package_version",
+        "9.0.0"
+      ],
+      [
+        "model_path",
+        "v3.5_default"
+      ],
+      [
+        "n_estimators",
+        "1"
+      ],
+      [
+        "thinking_mode",
+        "false"
+      ],
+      [
+        "service_endpoint",
+        "https://api.priorlabs.ai"
+      ],
+      [
+        "max_train_rows",
+        256
+      ],
+      [
+        "max_predict_rows",
+        400
+      ]
+    ],
+    "quantile_grid": [],
+    "quantile_monotonicity_rule": "canonical DCFA row-wise clip and cumulative maximum after V integration",
+    "runtime_image_digest": "managed_service_runtime_not_locally_available",
+    "seed": 20260920,
+    "track": "tabcf_iv",
+    "upstream_source_commit": "76e0d3eb9e97cebca381d1540db0333c1ef1016e"
+  },
+  "error_code": null,
+  "fallback_attempted": false,
+  "fallback_completed": false,
+  "mode": "api_only",
+  "v2_destination": "Hugging Face Space GPChen01/dcfa-zerogpu"
+}

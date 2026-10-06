@@ -1,0 +1,31 @@
+{
+  "source_commit": "f2e355ee714db28bde16ec8f2be2ffd89ed17ec3",
+  "space_commit": "252c12e637c890c6ce29b56868aafb448737ec2b",
+  "saved_at_utc": "2026-10-02T17:20:28.970467+00:00",
+  "run_id": "run_a59f587b55768ef3b8632887",
+  "result_bundle_id": "bundle_d4f43ef6861dd54996886842",
+  "seed": 20260920,
+  "verification": {
+    "status": "valid",
+    "run_id": "run_a59f587b55768ef3b8632887",
+    "result_bundle_id": "bundle_d4f43ef6861dd54996886842",
+    "verified_artifacts": [
+      "audit",
+      "backend_manifest",
+      "dataset_manifest",
+      "distribution_results.json",
+      "evidence",
+      "numerical_core",
+      "plot",
+      "report",
+      "report_manifest",
+      "result_bundle",
+      "specification"
+    ],
+    "evidence_count": 651,
+    "track": "tabcf_iv",
+    "execution_profile": "local_development",
+    "estimator_backend": "tabpfn",
+    "evidence_status": "development_only"
+  }
+}

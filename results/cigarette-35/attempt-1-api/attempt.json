@@ -1,0 +1,22 @@
+{
+  "api_usage": {
+    "after": {
+      "daily_limit": 5000000,
+      "daily_used": 330000,
+      "monthly_limit": 20000000,
+      "monthly_used": 400000
+    },
+    "before": {
+      "daily_limit": 5000000,
+      "daily_used": 300000,
+      "monthly_limit": 20000000,
+      "monthly_used": 370000
+    }
+  },
+  "backend": "api",
+  "client_wall_seconds": 170.38869379198877,
+  "directory": "attempt-1-api",
+  "error": null,
+  "provider_server_seconds": null,
+  "status": "completed"
+}

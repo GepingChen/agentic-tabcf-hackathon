@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "artifact_verification": {
+    "status": "valid",
+    "run_id": "run_72e0e4a81aac75e7a91f3dbd",
+    "result_bundle_id": "bundle_1ad75ce59ff0d82cc0aaa651",
+    "verified_artifacts": [
+      "audit",
+      "backend_manifest",
+      "dataset_manifest",
+      "distribution_results.json",
+      "evidence",
+      "numerical_core",
+      "plot",
+      "report",
+      "report_manifest",
+      "result_bundle",
+      "specification"
+    ],
+    "evidence_count": 656,
+    "track": "tabcf_iv",
+    "execution_profile": "local_development",
+    "estimator_backend": "tabpfn",
+    "evidence_status": "development_only"
+  },
+  "download_readback": {
+    "status": "valid",
+    "run_id": "run_72e0e4a81aac75e7a91f3dbd",
+    "result_bundle_id": "bundle_1ad75ce59ff0d82cc0aaa651",
+    "verified_artifacts": [
+      "audit",
+      "backend_manifest",
+      "dataset_manifest",
+      "distribution_results.json",
+      "evidence",
+      "numerical_core",
+      "plot",
+      "report",
+      "report_manifest",
+      "result_bundle",
+      "specification"
+    ],
+    "evidence_count": 656,
+    "track": "tabcf_iv",
+    "execution_profile": "local_development",
+    "estimator_backend": "tabpfn",
+    "evidence_status": "development_only"
+  },
+  "actual_model": "TabPFN v3.5_default",
+  "mode": "api_only",
+  "client_wall_seconds": 170.38869379198877,
+  "provider_server_seconds": null,
+  "gemini_request_count": 3,
+  "browser_steps": [
+    "upload",
+    "missing-information clarification",
+    "roles and units reviewed",
+    "text confirmation did not fit",
+    "button confirmation",
+    "report rendered",
+    "ZIP downloaded and independently verified",
+    "cached follow-up"
+  ],
+  "run_count_after_followup": 1,
+  "public_projection_note": "Account-level quota history and duplicated request telemetry were omitted. Original acceptance is retained in the local v6 ZIP; bound result/evidence files are unchanged."
+}
